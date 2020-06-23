@@ -204,9 +204,30 @@
                 "autoUpgradeMinorVersion": true,
                 "settings": {
                     "fileUris": [
-                        "https://dscprereq.blob.core.windows.net/config/InstallIIS.ps1"
+                        "https://raw.githubusercontent.com/CortexProjectsDepartment/Azure-Auto-Installer/master/InstallIIS.ps1"
                     ],
                     "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File InstallIIS.ps1"
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "apiVersion": "2019-12-01",
+            "name": "[concat(parameters('virtualMachineName'),'/', 'EnablePSRemoting')]",
+            "location": "[parameters('virtualMachineLocation')]",
+            "dependsOn": [
+                "[concat('Microsoft.Compute/virtualMachines/',parameters('virtualMachineName'))]"
+            ],
+            "properties": {
+                "publisher": "Microsoft.Compute",
+                "type": "CustomScriptExtension",
+                "typeHandlerVersion": "1.7",
+                "autoUpgradeMinorVersion": true,
+                "settings": {
+                    "fileUris": [
+                        "https://raw.githubusercontent.com/CortexProjectsDepartment/Azure-Auto-Installer/master/EnablePSRemoting.ps1"
+                    ],
+                    "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File EnablePSRemoting.ps1"
                 }
             }
         },

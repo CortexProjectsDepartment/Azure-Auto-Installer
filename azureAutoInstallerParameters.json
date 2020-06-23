@@ -1,0 +1,43 @@
+
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "existingVNETName": {
+      "value": "Virtual-Network"
+    },
+    "existingSubnetName": {
+      "value": "Subnet"
+    },
+    "dnsLabelPrefix": {
+      "value": "rcmachine123"
+    },
+    "vmSize": {
+      "value": "Standard_DS2_v2"
+    },
+    "domainToJoin": {
+      "value": "ctxprojects.com"
+    },
+    "domainUsername": {
+      "value": "arun.mittal"
+    },
+    "domainPassword": {
+      "value": "Cort3x2468"
+    },
+    "ouPath": {
+      "value": "OU=Projects Members,DC=ctxprojects,DC=com"
+    },
+    "domainJoinOptions": {
+      "value": 3
+    },
+    "vmAdminUsername": {
+      "value": "arun.mittal"
+    },
+    "vmAdminPassword": {
+      "value": "H@rr1sonH@rr1son"
+    },
+    "location": {
+      "value": "uksouth"
+    }
+  }
+}

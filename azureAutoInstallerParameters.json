@@ -23,7 +23,7 @@
     "domainPassword": {
       "value": null
     },
-    "oUPath": {
+    "domainUserOuPath": {
       "value": null
     },
     "domainJoinOptions": {

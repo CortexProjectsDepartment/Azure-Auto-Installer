@@ -13,3 +13,6 @@ Install-WindowsFeature -Name Web-Filtering
 Install-WindowsFeature -Name Web-Stat-Compression
 Install-WindowsFeature -Name Web-Mgmt-Console
 Install-WindowsFeature -Name Web-Websockets
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+Install-Module AzureRM
+Import-Module AzureRM

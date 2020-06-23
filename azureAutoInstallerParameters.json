@@ -26,9 +26,6 @@
     "domainUserOuPath": {
       "value": null
     },
-    "domainJoinOptionsInteger": {
-      "value": 3
-    },
     "virtualMachineUsername": {
       "value": null
     },

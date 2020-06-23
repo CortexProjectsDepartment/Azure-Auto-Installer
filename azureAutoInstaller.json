@@ -52,7 +52,7 @@
                 "description": "Specifies an organizational unit (OU) for the domain account. Enter the full distinguished name of the OU in quotation marks. Example: \"OU=testOU; DC=domain; DC=Domain; DC=com\""
             }
         },
-        "domainJoinOptions": {
+        "domainJoinOptionsInteger": {
             "defaultValue": 3,
             "type": "Int",
             "metadata": {
@@ -182,7 +182,7 @@
                     "OUPath": "[parameters('domainUserOuPath')]",
                     "User": "[concat(parameters('domainName'), '\\', parameters('domainUsername'))]",
                     "Restart": "true",
-                    "Options": "[parameters('domainJoinOptions')]"
+                    "Options": "[parameters('domainJoinOptionsInteger')]"
                 },
                 "protectedSettings": {
                     "Password": "[parameters('domainPassword')]"

@@ -1,1 +1,1 @@
-﻿Set-ExecutionPolicy -ExecutionPolicy Bypass
+﻿Set-ExecutionPolicy -ExecutionPolicy Bypass -Force

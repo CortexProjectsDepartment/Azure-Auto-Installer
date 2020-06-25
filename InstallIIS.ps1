@@ -1,3 +1,5 @@
+Enable-PSRemoting -Force
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Force
 Install-WindowsFeature -Name Web-Static-Content
 Install-WindowsFeature -Name Web-Default-Doc
 Install-WindowsFeature -Name Web-Dir-Browsing

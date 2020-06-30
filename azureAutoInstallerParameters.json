@@ -3,37 +3,37 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "virtualNetworkName": {
-      "value": null
+      "value": ""
     },
     "subnetName": {
-      "value": null
+      "value": ""
     },
     "virtualMachineName": {
-      "value": null
+      "value": ""
     },
     "virtualMachineSize": {
-      "value": null
+      "value": ""
     },
     "domainName": {
-      "value": null
+      "value": ""
     },
     "domainUsername": {
-      "value": null
+      "value": ""
     },
     "domainPassword": {
-      "value": null
+      "value": ""
     },
     "domainUserOuPath": {
-      "value": null
+      "value": ""
     },
     "virtualMachineUsername": {
-      "value": null
+      "value": ""
     },
     "virtualMachinePassword": {
-      "value": null
+      "value": ""
     },
     "virtualMachineLocation": {
-      "value": null
+      "value": ""
     }
   }
 }

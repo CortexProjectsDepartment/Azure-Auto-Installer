@@ -1,7 +1,7 @@
 {
 	"resourceGroupName": "",
-	"azureTenantID": "",
-	"azureSubscriptionID": "",
-	"azureApplicationID": "",
+	"azureTenantId": "",
+	"azureSubscriptionId": "",
+	"azureApplicationId": "",
 	"azureApplicationKey": ""
 }

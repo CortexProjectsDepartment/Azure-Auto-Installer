@@ -1,4 +1,5 @@
 Enable-PSRemoting -Force
+Enable-WSManCredSSP -Role Server -Force
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Force
 Install-WindowsFeature -Name Web-Static-Content
 Install-WindowsFeature -Name Web-Default-Doc

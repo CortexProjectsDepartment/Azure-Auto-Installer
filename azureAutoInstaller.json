@@ -77,12 +77,18 @@
             "metadata": {
                 "description": "Location for all resources."
             }
+        },
+        "windowsOsVersion": {
+            "defaultValue": "2016-Datacenter",
+            "type": "String",
+            "metadata": {
+                "description": "Operating System for the virtual machine."
+            }
         }
     },
     "variables": {
         "imagePublisher": "MicrosoftWindowsServer",
         "imageOffer": "WindowsServer",
-        "windowsOSVersion": "2016-Datacenter",
         "nicName": "[concat(parameters('virtualMachineName'),'Nic')]",
         "publicIPName": "[concat(parameters('virtualMachineName'),'Pip')]",
         "subnetId": "[resourceId(resourceGroup().name, 'Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworkName'), parameters('subnetName'))]"

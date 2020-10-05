@@ -152,7 +152,7 @@
                     "imageReference": {
                         "publisher": "[variables('imagePublisher')]",
                         "offer": "[variables('imageOffer')]",
-                        "sku": "[variables('windowsOSVersion')]",
+                        "sku": "[variables('windowsOsVersion')]",
                         "version": "latest"
                     },
                     "osDisk": {
